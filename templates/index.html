@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Malaria Web App</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+    </head>
+
+    <body>
+        <h1>Malaria Classification</h1>
+        <p>Please upload an image for classification</p>
+
+        <form action="/result" method="POST" enctype="multipart/form-data">
+
+            <input type="file" name="file" accept="image/*">
+            <br>
+            <input type="submit" value="Submit">
+        
+        </form>
+    </body>
+</html>
