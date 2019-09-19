@@ -1,5 +1,4 @@
 import numpy as np
-import pickle
 from flask import Flask, render_template, request
 import keras
 from keras.models import load_model
